@@ -70,7 +70,7 @@ function Navbar(prop) {
           </ul>
           <div className="form-check form-switch">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               role="switch"
               id="flexSwitchCheckDefault"
@@ -79,7 +79,7 @@ function Navbar(prop) {
             <label
               className="form-check-label"
               style={{ color: prop.theme === "light" ? "black" : "white" }}
-              for="flexSwitchCheckDefault"
+              htmlFor="flexSwitchCheckDefault"
             >
               {prop.theme === "light" ? "Enable Dark" : "Disable Dark"} Theme
             </label>
