@@ -1,5 +1,6 @@
 import Navbar from "./component/Navbar";
 import { useState } from "react";
+import UserDetails from "./component/UserDetails";
 
 function App() {
   const [Theme, setTheme] = useState("light");
@@ -13,11 +14,14 @@ function App() {
   };
 
   return (
-    <Navbar
-      title="JavaScript Utils"
-      theme={Theme}
-      changeTheme={changeTheme}
-    ></Navbar>
+    <>
+      <Navbar
+        title="JavaScript Utils"
+        theme={Theme}
+        changeTheme={changeTheme}
+      ></Navbar>
+      <UserDetails />
+    </>
   );
 }
 
